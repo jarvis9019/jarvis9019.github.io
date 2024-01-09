@@ -7,44 +7,56 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <div id="container--main">
+      <ul class="nav-links">
+        <li class="center"><a href="#about">About</a></li>
+        <li class="center"><a href="#techstack">Tech stack</a></li>
+        <li class="upward"><a href="#work-history">Experience</a></li>
+        <li class="forward"><a href="#education">Education</a></li>
+        <li class="forward"><a href="#projects">Projects</a></li>
+        <li class="forward"><a href="#recognitions">Recognitions</a></li>
+      </ul>
       <section id="wrapper--hero" class="section--page">
         <img id="profile-pic" src="assets/images/profile_pic.jpg" />
 
         <div>
           <h1 id="user-name">Omkar Sutar</h1>
           <p id="bio">
-            Senior Software developer at
+            Senior Associate II at
             <a
               href="https://www.pwc.com/us/en/careers/why-pwc/what-we-do/acceleration-centers.html"
               target="_blank"
               >PwC</a
             >
           </p>
-          <p id="email">👉 om.sutar09@gmail.com</p>
+          <p id="email">
+            <a href="mailto:om.sutar09@gmail.com">👉 om.sutar09@gmail.com</a>
+          </p>
+          <div id="socials--list">
+            <a href="https://github.com/jarvis9019" target="_blank"
+              ><img id="social-pic" src="./assets/images/github.png"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/omkar-sutar-316650ba/"
+              target="_blank"
+              ><img id="social-pic" src="./assets/images/linkedin.png"
+            /></a>
+
+            <!-- <a href="./assets/Omkar's-resume.pdf" target="_blank">
+              <div class="download">
+                <i class="fa fa fa-android fa-3x"></i>
+                <span class="df">Resume</span>
+              </div></a
+            >  -->
+          </div>
         </div>
       </section>
 
-      <section class="section--page">
-        <div id="socials--list">
-          <!-- <a href="https://youtube.com/" target="_blank">Youtube</a>
-          <a href="https://twitter.com/" target="_blank">Twitter</a> -->
-          <a
-            href="https://www.linkedin.com/in/omkar-sutar-316650ba/"
-            target="_blank"
-            >Linkedin</a
-          >
-          <a href="https://github.com/jarvis9019" target="_blank">Github</a>
-          <a href="./assets/Omkar's-resume.pdf" target="_blank"
-            >Download Resume</a
-          >
-        </div>
-      </section>
-
-      <section class="section--page">
-        <h2>Skills & Qualifications</h2>
+      <section id="about" class="section--page">
+        <h2>About</h2>
         <ul id="qualifications--list">
           <li>
             ✔️ Developing robust solutions with frontend and backend
@@ -55,7 +67,7 @@
         </ul>
       </section>
 
-      <section class="section--page">
+      <section id="techstack" class="section--page">
         <h2>Tech stack</h2>
 
         <div id="wrapper--techstack__items">
@@ -73,13 +85,13 @@
         </div>
       </section>
 
-      <section id="work-history-wrapper" class="section--page">
+      <section id="work-history" class="section--page">
         <h2>Work History</h2>
 
         <div class="line-break"></div>
         <div class="card--work-history">
-          <strong>🚧 Senior Software Engineer | PwC</strong>
-          <p>11/2023 - Present</p>
+          <strong>Senior Associate II @ PwC</strong>
+          <p>12/2023 - Present</p>
           <p>
             Working on Insurance product implementing issue, process, claim,
             billing fucntionalities
@@ -96,7 +108,7 @@
         <div class="line-break"></div>
 
         <div class="card--work-history">
-          <strong>🚧 Senior Software Engineer @ SitusAMC</strong>
+          <strong>Senior Software Engineer @ SitusAMC</strong>
           <p>11/2019 - 10/2023</p>
           <p>Developed commercial and residential mortgage process system</p>
           <ul>
@@ -118,7 +130,7 @@
         <div class="line-break"></div>
 
         <div class="card--work-history">
-          <strong>🚧 Senior Software Engineer @ LTI</strong>
+          <strong>Senior Software Engineer @ LTI</strong>
           <p>10/2016 - 11/2021</p>
           <p>
             Designed and developed cash management and delivery system from
@@ -139,7 +151,20 @@
         </div>
       </section>
 
-      <section class="section--page">
+      <section id="education" class="section--page">
+        <h2>Educational Qualification</h2>
+
+        <div class="card--project">
+          <strong
+            >Bachelor of Technology (B.Tech) in Electronics and
+            Telecommunication Engineering</strong
+          >
+          <p>Placed in First class</p>
+          <p>Conferred by Dr Babasaheb Ambedkar Technological University</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section--page">
         <h2>Projects</h2>
 
         <div class="card--project">
@@ -155,17 +180,13 @@
           <a href="project1.html">Document Versioning System</a>
         </div>
       </section>
-      <section class="section--page">
-        <h2>Projects</h2>
+      <section id="recognitions" class="section--page">
+        <h2>Recognitions</h2>
 
         <div class="card--project">
-          <a href="project1.html"
-            ><span>🏆 </span>Certificate of Appreciation</a
-          >
+          <span>🏆 </span>Certificate of Appreciation
         </div>
-        <div class="card--project">
-          <a href="project1.html"><span>🏆 </span>Pat on the Back Award</a>
-        </div>
+        <div class="card--project"><span>🏆 </span>Pat on the Back Award</div>
       </section>
     </div>
   </body>

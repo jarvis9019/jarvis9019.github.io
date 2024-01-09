@@ -25,6 +25,7 @@
   line-height: 1.5em;
   box-sizing: border-box;
   color: var(--mainTextColor);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -88,9 +89,15 @@ a {
 
 #socials--list {
   display: flex;
-  justify-content: space-between;
   column-gap: 1em;
   flex-wrap: wrap;
+}
+
+#social-pic {
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  width: 50px;
 }
 
 #socials--list a {
@@ -178,4 +185,105 @@ a {
     border-left: none;
     padding-left: 0;
   }
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #131415;
+  padding: 0px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before {
+  width: 100%;
+}
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links li.upward a:before {
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.nav-links li.upward a:hover:before {
+  bottom: 0px;
+  opacity: 1;
+}
+.nav-links li.forward a:before {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.nav-links li.forward a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.download {
+  width: 60px;
+  height: 40px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin-top: 5px;
+}
+
+.download > .fa {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+  position: absolute;
+}
+
+.df {
+  margin: 10px 5px 5px 5px;
+  font-size: 0.75em;
+}
+
+.dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+
+.lucide-lucide-arrow-down-to-line {
+  display: flex;
+}
+
+.download:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
