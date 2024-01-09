@@ -278,12 +278,3 @@ a {
   top: 33px;
   font-size: 1.08em;
 }
-
-.lucide-lucide-arrow-down-to-line {
-  display: flex;
-}
-
-.download:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
